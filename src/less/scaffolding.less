@@ -2,13 +2,19 @@ html,
 body {
   height: 100%;
 }
-body {  
+body {
   margin: 0;
   padding: 0;
   font-size: @font-size;
-  font-family: @font-family;  
+  font-family: @Monsterrat;  
   color: #fff;
   background-color: #16052d;  
+  // background-image: url("../img/body-bg-1.png"),
+                    // url("../img/body-bg-2.png");
+  background-position: right 800px, left 1600px;
+  background-size: contain;
+  
+  background-repeat: no-repeat;
   min-width: 320px;
 }
 
@@ -29,7 +35,7 @@ img {
 }
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
-  font-family: @font-family;
+  font-family: @Monsterrat;
 }
 a {
   margin: 0;
@@ -42,15 +48,186 @@ textarea {
 }
 
 .section {
+  position: relative;
   .container {
-    position: relative;    
+    height: 100%;
+    position: relative;
+  }//container
+
+  &__bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 80px;    
+    &-text {
+      position: absolute;           
+      margin: 0;      
+      top: 50%;
+      left: -40px;
+      font-size: 12px;    
+      text-align: center;
+      text-transform: uppercase;
+      transform: rotate(-90deg) translate(-50%, -50%);  
+      white-space: nowrap; 
+      span {
+        font-size: 10px;
+        color: #b5bbc4;
+      }
+    }
+  }//bar
+
+  &__content {
+    margin-left: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
   }
+
+  &__title {
+    position: absolute;
+    top: 50%;    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 132px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    @media @phone {
+      text-align: left;
+      position: static;
+      padding-top: 100px;
+      transform: none;
+      font-size: 50px;
+      margin-bottom: 75px;
+      span {
+        position: static;
+        transform: none;
+        border: none;
+        font-size: inherit;
+        text-transform: uppercase;
+      }
+    }
+    
+    &-icon {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 8px solid #fff;
+      font-size: 40px;
+      line-height: 120px;
+      transform: translate(-50%, -50%) rotate(-10deg);
+      text-transform: none;
+      z-index: 10;
+    }
+  }//title
+
   &__bottom {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 80px;
-  }  
+    @media @phone {
+      position: static;
+
+    }
+  }//bottom
+
+  &__btn-scroll {
+    position: absolute;
+    bottom: 50px; 
+    left: 50%;
+    transform: translate(-50%, 0);    
+  }//btn-scroll
+  &__date {
+    position: absolute;
+    right: 65px;
+    bottom: 107px;
+    a {
+      position: relative;
+      padding-top: 30px;
+      font-size: 13px;
+      line-height: 1;
+      color: inherit;
+      .icon {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;        
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  &__bottom {
+    max-width: 480px;
+    h3 {
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 16px      
+    }
+    p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 25px;      
+    }
+  }
+}
+.section-passion {
+  height: 880px;
+  background: url("../img/passion-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.icon-arrow-down {
+  display: block;
+  width: 12px;
+  height: 7px;
+  background-image: data-uri("../img/svg/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-arrow-right {
+  display: block;
+  width: 7px;
+  height: 12px;
+  background-image: data-uri("../img/svg/icon-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-heart {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: data-uri("../img/svg/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-message {
+  display: block;
+  width: 19px;
+  height: 17px;
+  background-image: data-uri("../img/svg/message.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-toggler {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  width: 23px;
+  height: 16px;  
+  background-image: data-uri("../img/svg/burger.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(-50%, 0);
 }
 // градиент для текста
 // -------------------

@@ -1,0 +1,102 @@
+.card {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;  
+  width: 379px;
+  background: #fff;
+  &__img {
+    position: relative;
+    vertical-align: top;
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      border-left: 14px solid #fff;
+      border-color: tranparent;
+      bottom: 0;
+      right: 0;
+      background: #fff;
+    }
+  }//img
+  &__descr {
+    padding: 40px 32px 82px;
+    min-height: 265px;
+    background: linear-gradient( to bottom , #fff 70%, #dbdbdb 100%);
+    box-sizing: border-box;
+    p {
+      margin: 0;
+      max-height: 96px;
+      font-size: 13px;
+      line-height: 24px;
+      color: #677278; 
+      overflow: hidden;
+    }
+  }//descr
+  &__title {
+    margin-bottom: 10px;
+    color: #000; 
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }//title
+
+  &__like {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 22px;
+    bottom: 20px;
+    &-count {
+      margin-left: 4px;
+      font-size: 12px;
+    }
+  }//like
+
+  &__bottom {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-top: 1px solid #ededed;
+  }//bottom
+  &__comment {
+    padding: 22px 0 22px 30px;
+    position: relative;
+    display: inline-block;
+    padding-left: 28px;
+    width: 172px;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000;
+    border-right: 1px solid #ededed;
+    &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 50%;
+      margin-top: -8.5px;
+      width: 19px;
+      height: 17px;
+      background-image: data-uri("../img/svg/message.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }//comment
+  &__more {
+    display: block;
+    width: 64px;
+    height: 64px;
+    font-size: 0;
+    background-image: data-uri('../img/svg/hellip.svg'),linear-gradient(to bottom, #ededed, #d2d2d2);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+  }
+}
