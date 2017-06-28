@@ -1,9 +1,8 @@
-section.section
-  .section__content
-    .container
-      h2.section__itle Pictures Worth Seeing
-  .slider
-    .slider__item
+section.slider
+  .container
+    h2.slider__title Pictures Worth Seeing
+  .slider__row
+    .slider__list.slider-js      
       atrcile.card
         .card__img
           img(src="img/content/img-1.jpg", alt="")
@@ -17,7 +16,7 @@ section.section
           .card__bottom
             a.card__comment(href="/") 374 comments
             a.card__more(href="/") More
-    .slider__item
+      
       atrcile.card
        .card__img
          img(src="img/content/img-1.jpg", alt="")
@@ -31,7 +30,7 @@ section.section
          .card__bottom
            a.card__comment(href="/") 374 comments
            a.card__more(href="/") More
-    .slider__item
+      
       atrcile.card
        .card__img
          img(src="img/content/img-1.jpg", alt="")
@@ -45,31 +44,136 @@ section.section
          .card__bottom
            a.card__comment(href="/") 374 comments
            a.card__more(href="/") More
-    //- .slider__item
-    //-   atrcile.card
-    //-    .card__img
-    //-      img(src="img/content/img-1.jpg", alt="")
-    //-      .card__like
-    //-        i.icon.icon-heart
-    //-        span.card__like-count 100
-    //-    .card__content
-    //-      .card__descr
-    //-        h3.card__title Decayed
-    //-        p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officiis, aliquid similique repellendus doloribus enim, nesciunt. Tempore delectus aliquam fugit expedita similique nisi, nihil accusamus rem repudiandae, vitae architecto quos dolorem? Quos quo facere possimus, placeat alias at repellendus modi.
-    //-      .card__bottom
-    //-        a.card__comment(href="/") 374 comments
-    //-        a.card__more(href="/") More
 
-  //- .slider
-  //-   .slider__title 
-  //- .slider__list
-  //-   .slider__item
-//- section.section.section-passion
-//-   .container
-//-     h2.section__title It's 
-//-       span.section__title-icon only
-//-       | Passion
-//-     .section__bottom
-//-       h2 Texture makes art
-//-       p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis suscipit assumenda laudantium illum asperiores, eveniet nostrum, veritatis. Nostrum odit fugiat ducimus modi rem natus consequuntur, aperiam suscipit quo officia.
+      atrcile.card
+       .card__img
+         img(src="img/content/img-1.jpg", alt="")
+         .card__like
+           i.icon.icon-heart
+           span.card__like-count 100
+       .card__content
+         .card__descr
+           h3.card__title Decayed
+           p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nobis adipisci, at excepturi
+         .card__bottom
+           a.card__comment(href="/") 374 comments
+           a.card__more(href="/") More
+    .slider__control.slider-control-js
+      i.icon.icon-arrow-right.icon-arrow-right--big
+
+section.section.section--passion
+  .section__bar    
+    p.section__bar-text Pain the power&nbsp; 
+      span blaz robar
+    a(href="/").section__btn-scroll
+      i.icon-arrow-down  
+  .section__content(style="background-image: url('img/passion-bg.jpg')")
+    .container   
+      h2.section__title 
+        .section__logo
+          img(src="img/logo-2.png", alt="")
+      .section__bottom
+        h3 Texture makes art
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, dolore quibusdam eum. Ducimus dolorum et harum error natus placeat consequatur corrupti totam quam mollitia, iure vel dicta aperiam, asperiores nemo.
+    .section__date
+      a(href="/") Aplril 19th 2016
+        i.icon.icon-arrow-right
+section.section.section--textual
+  .section__bar
+    .section__bar-text Pain the power&nbsp; 
+      span 1jhgvjhg
+
+  .section__content
+    .container
+      .section__row
+        .section__col
+          p.section__col-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+          p.section__col-text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+        .section__col 
+          p.section__col-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+section.slider
+  .container
+    h2.slider__title Pictures Worth Seeing
+  .slider__row
+    .slider__list.slider-js
+      
+        atrcile.card
+          .card__img
+            img(src="img/content/img-1.jpg", alt="")
+            .card__like
+              i.icon.icon-heart
+              span.card__like-count 100
+          .card__content
+            .card__descr
+              h3.card__title Decayed
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nobis adipisci, at excepturi
+            .card__bottom
+              a.card__comment(href="/") 374 comments
+              a.card__more(href="/") More
+        atrcile.card
+          .card__img
+            img(src="img/content/img-1.jpg", alt="")
+            .card__like
+              i.icon.icon-heart
+              span.card__like-count 100
+          .card__content
+            .card__descr
+              h3.card__title Decayed
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nobis adipisci, at excepturi
+            .card__bottom
+              a.card__comment(href="/") 374 comments
+              a.card__more(href="/") More
+      
+        atrcile.card
+         .card__img
+           img(src="img/content/img-1.jpg", alt="")
+           .card__like
+             i.icon.icon-heart
+             span.card__like-count 100
+         .card__content
+           .card__descr
+             h3.card__title Decayed
+             p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur officiis, aliquid similique repellendus doloribus enim, nesciunt. Tempore delectus aliquam fugit expedita similique nisi, nihil accusamus rem repudiandae, vitae architecto quos dolorem? Quos quo facere possimus, placeat alias at repellendus modi.
+           .card__bottom
+             a.card__comment(href="/") 374 comments
+             a.card__more(href="/") More
+      
+        atrcile.card
+         .card__img
+           img(src="img/content/img-1.jpg", alt="")
+           .card__like
+             i.icon.icon-heart
+             span.card__like-count 100
+         .card__content
+           .card__descr
+             h3.card__title Decayed
+             p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nobis adipisci, at excepturi
+           .card__bottom
+             a.card__comment(href="/") 374 comments
+             a.card__more(href="/") More
+    .slider__control.slider-control-js
+      i.icon.icon-arrow-right.icon-arrow-right--big
+
+section.section.section--textual
+  .section__bar
+    .section__bar-text Pain the power&nbsp; 
+      span 1jhgvjhg
+  .section__content
+    .container
+      .section__row
+        .section__col
+          h2.section__col__title Start-Up Resources
+          p.section__col-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+        .section__col
+          h2.section__col__title Training & Funding
+          p.section__col-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+        .section__col
+          h2.section__col__title Connect
+          p.section__col-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+        .section__col
+          h2.section__col__title Communicate
+          p.section__col-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+          
+       
+
 
